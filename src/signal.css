@@ -1,0 +1,51 @@
+/* Bootstrap Theme by Bootswatch https://bootswatch.com/yeti/ */
+@import "https://bootswatch.com/4/yeti/bootstrap.min.css";
+
+/* Open Iconic library for Bootstrap https://useiconic.com/open */
+@import "https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css";
+
+body {
+	background-color: #ccc;
+}
+
+.networkContainer {
+	padding: 1em;
+	background-color: white;
+}
+
+.jumbo {
+	background-image: url(./new-bg.png);
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+	margin-bottom: 0px;
+}
+
+.someTopPadding {
+	padding-top: 0.5em;
+}
+
+.someBottomPadding {
+	padding-bottom: 0.5em;
+}
+
+.noBottom {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.icon {
+	padding-top: 0.25em;
+}
+
+.modal {
+	border-color: #f1b8b8;
+}
+
+.modal-header {
+	background-color: #f5cccc;
+}
+
+.modal-title {
+	color: #6b0100;
+}
