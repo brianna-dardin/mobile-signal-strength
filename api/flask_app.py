@@ -6,8 +6,10 @@ from scipy.optimize import curve_fit
 app = Flask(__name__)
 app.config["DEBUG"] = True
 
-CORS(app, origins="*", methods=["GET", "POST"], expose_headers=["Content-Type"], \
-        allow_headers="*", send_wildcard=True, max_age=10000)
+app.config['CORS_HEADERS'] = "Content-Type"
+app.config['CORS_RESOURCES'] = {r"/*": {"origins": "*"}}
+
+cors = CORS(app)
 
 # Function to calculate the exponential with constants a and b
 def exponential(x, a, b):
